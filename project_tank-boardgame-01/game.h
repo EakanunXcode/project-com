@@ -18,6 +18,7 @@ class Army{
     public:
     void createchar(string); //เรื่มต้นค่า status
     void newturn(); //เปลี่ยนตา
+	
 };
 
 
@@ -42,5 +43,4 @@ void Army::createchar(string type){
     }
 	hp = hpmax;
     changeturn = false;
-	cout<<"Hello";
 }
