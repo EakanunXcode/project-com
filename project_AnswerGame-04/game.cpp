@@ -4,17 +4,20 @@
 using namespace std;
 
 int main() {
-    cout << "********  Game Started  **********" << endl;
+    cout << "                                           " << endl;
+    cout << "********  Started Relaxing Game  **********" << endl;
+    cout << "                                           " << endl;
     int score = 0;
     srand(time(0));
     switch (1) {
-        //a + b ez
         case 1: {
             int a = rand() % 1000;
             int b = rand() % 1000;
             int sum = a + b;
-            cout << "1) What is " << a << " + " << b << " ?" << endl;
+            cout << "1.) What is " << a << " + " << b << " ?" << endl;
             int a1;
+            cout << "             "<< endl;
+            cout << "Your Answer :";
             cin >> a1;
             if (a1 == sum) {
                 score++;
@@ -22,35 +25,41 @@ int main() {
             }
             else {
                 cout << "- Wrong!" << endl;
+                cout << "Correct! is "<< sum << endl;
             }
             cout << endl;
             cout << "-----------------------------------------------------------------------------------------------" << endl;
         }
         case 2: {
-            cout << "2) What is the boiling point temperature of water?" << endl;
-            string q2[] = {" 0 Celsius", " 75 Celsius", " 100 Celsius"};
+            cout << "2.) How to wash dishes without getting your hands wet?" << endl;
+            string q2[] = {" Wash and dry your hands."," Wash and dry in the sun.", " Wash without water.", " Use someone else to wash."};
             for (int i=0; i < sizeof(q2)/sizeof(q2[0]); i++) {
                 cout << i+1 << ". " << q2[i] << endl;
             }
             int a2;
+            cout << "             "<< endl;
+            cout << "Your Answer :";
             cin >> a2;
-            if (a2 == 3) {
+            if (a2 == 4) {
                 score++;
                 cout << "- Correct!" << endl;
             }
             else {
                 cout << "- Wrong!" << endl;
+                cout << "Correct! is "<< q2[3] << endl;
             }
             cout << endl;
             cout << "-----------------------------------------------------------------------------------------------" << endl;
         }
         case 3: {
-            cout << "3) What is the speed of sound?" << endl;
-            string q3[] = {"120 km/h", "1,200 km/h", "400 km/h"};
+            cout << "3.) In a race, if you are in third place ,and you passed the third; what position are you in?" << endl;
+            string q3[] = {"First ","Second ","Third ","Fourth "};
             for (int i=0; i < sizeof(q3)/sizeof(q3[0]); i++) {
                 cout << i+1 << ". " << q3[i] << endl;
             }
             int a3;
+            cout << "             "<< endl;
+            cout << "Your Answer :";
             cin >> a3;
             if (a3 == 2) {
                 score++;
@@ -58,121 +67,121 @@ int main() {
             }
             else {
                 cout << "- Wrong!" << endl;
+                 cout << "Correct! is "<< q3[1] << endl;
             }
             cout << endl;
             cout << "-----------------------------------------------------------------------------------------------" << endl;
         }
         case 4: {
-            cout << "4) In a race, if you are in third place ,and you passed the third; what position are you in?" << endl;
-            string q4[] = {"Fourth ", "Fifth ", "Second"};
+            cout << "4.)3 brothers rode a buffalo backhome. The older sit at the head and the middle sit on the back. The younger sit behind. Do you know where a buffalo is the heaviest??" << endl;
+            string q4[] = {"Head ", "Middle ", "Behind", "Don't know"};
             for (int i=0; i < sizeof(q4)/sizeof(q4[0]); i++) {
                 cout << i+1 << ". " << q4[i] << endl;
             }
             int a4;
+            cout << "             "<< endl;
+            cout << "Your Answer :";
             cin >> a4;
-            if (a4 == 2) {
+            if (a4 == 4) {
                 score++;
                 cout << "- Correct!" << endl;
             }
             else {
                 cout << "- Wrong!" << endl;
+                cout << "Correct! is "<< q4[3] << endl;
             }
             cout << endl;
             cout << "-----------------------------------------------------------------------------------------------" << endl;
         }
         case 5: {
-            cout << "5) How do you spell Red?" << endl;
-            string q5[] = {"L-S-T-E-R", "B-l-u-e", "A-D-C", "R-e-d"};
+            cout << "5.) Have 200 people standing in this line. Who were Isaan people?" << endl;
+            string q5[] = {"1 ", "9 ", "101 ","200 "};
             for (int i=0; i < sizeof(q5)/sizeof(q5[0]); i++) {
                 cout << i+1 << ". " << q5[i] << endl;
             }
             int a5;
+            cout << "             "<< endl;
+            cout << "Your Answer :";
             cin >> a5;
-            if (a5 == 4) {
+            if (a5 == 3) {
                 score++;
                 cout << "- Correct!" << endl;
             }
             else {
                 cout << "- Wrong!" << endl;
+                cout << "Correct! is "<< q5[2] << endl;
             }
             cout << endl;
             cout << "-----------------------------------------------------------------------------------------------" << endl;
         }
         case 6: {
-            cout << "6) 1 matchstick can light 2 candles, if 100 candles are lighted, how many matches will it take ?" << endl;
-            string q6[] = {"Every month", "R2 months", "None of above"};
+            cout << "6.) Have 100 people standing on a cliff and Who people will fall off a cliff and die?" << endl;
+            string q6[] = {"1 ", "9 ", "19 ","100 "};
             for (int i=0; i < sizeof(q6)/sizeof(q6[0]); i++) {
                 cout << i+1 << ". " << q6[i] << endl;
             }
             int a6;
+            cout << "             "<< endl;
+            cout << "Your Answer :";
             cin >> a6;
-            if (a6 == 1) {
+            if (a6 == 2) {
                 score++;
                 cout << "- Correct!" << endl;
             }
             else {
                 cout << "- Wrong!" << endl;
+                cout << "Correct! is "<< q6[1] << endl;
             }
             cout << endl;
             cout << "-----------------------------------------------------------------------------------------------" << endl;
         }
         case 7: {
-            cout << "7) Array Game Change the bit of the array to 1" << endl;
-            cout << "Enter number of bits to change it to 1 the code will change one of them to 0" << endl;
-            int q7[11];
-            //reset
-            for(int i = 0; i < 10; i++) {
-                q7[i] = 0;
+            cout << "7.) What do you call a person who has only one right leg?" << endl;
+            string q7[] = {"Normal person ", "Disabled person ", "Crazy people ","Weird people "};
+            for (int i=0; i < sizeof(q7)/sizeof(q7[0]); i++) {
+                cout << i+1 << ". " << q7[i] << endl;
             }
-            //random
-            bool isChange = true;
-            while(isChange){
-                cout << "Enter the first index of array 1 - 10 (Enter -1 to skip): ";
-                int index;
-                cin >> index;
-                //ฉลาดเกมส์โกง
-                if(index == 100){
-                    score++;
-                    cout << "Correct!" << endl;
-                    break;
-                }
-                if(index == -1){
-                    cout << "Skip!" << endl;
-                    break;
-                }
-                cout << "Enter the second index of array 1 - 10 (Enter -1 to skip): ";
-                int index2;
-                cin >> index2;
-                if(index2 == -1){
-                    cout << "Skip!" << endl;
-                    break;
-                }
-                int n = rand() % 11;
-                int k = 0;
-                q7[n] = 0;
-                q7[index] = 1;
-                q7[index2] = 1;
-                cout << "The bit of the array is: ";
-                for(int i = 1; i <= 10; i++){
-                    if(q7[i] == 1) {
-                        k++;
-                    }
-                    cout << q7[i];
-                }
-                cout << endl;
-                if(k == 10) {
-                    isChange = false;
-                    score++;
-                    cout << "Correct!" << endl;
-                }
+            int a7;
+            cout << "             "<< endl;
+            cout << "Your Answer :";
+            cin >> a7;
+            if (a7 == 1) {
+                score++;
+                cout << "- Correct!" << endl;
             }
+            else {
+                cout << "- Wrong!" << endl;
+                cout << "Correct! is "<< q7[0] << endl;
+            }
+            cout << endl;
             cout << "-----------------------------------------------------------------------------------------------" << endl;
         }
-    cout << "***" << endl;
-    cout << "You only scored [ " << score << " ] points out of 7 points" << endl;
-    cout << "********  Game End  **********" << endl;
+        case 8: {
+            cout << "8.) Prime Minister's phone number What number does it start with?" << endl;
+            string q8[] = {"0 ", "1 ", "2 ","3 "};
+            for (int i=0; i < sizeof(q8)/sizeof(q8[0]); i++) {
+                cout << i+1 << ". " << q8[i] << endl;
+            }
+            int a8;
+            cout << "             "<< endl;
+            cout << "Your Answer :";
+            cin >> a8;
+            if (a8 == 1) {
+                score++;
+                cout << "- Correct!" << endl;
+            }
+            else {
+                cout << "- Wrong!" << endl;
+                cout << "Correct! is "<< q8[0] << endl;
+            }
+            cout << endl;
+            cout << "-----------------------------------------------------------------------------------------------" << endl;
+        }
+        }
+    cout << "                                                           \n" << endl;
+    cout << "\t\t\tYour scored [ " << score << " ] points out of 8 points" << endl;
+    cout << "                                                           \n" << endl;
+    cout << "-----------------------------------------------------------------------------------------------" << endl;
     return 0;
 }
-}
-
 
